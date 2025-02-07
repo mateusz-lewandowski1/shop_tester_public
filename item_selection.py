@@ -62,7 +62,7 @@ class ItemSelection:
         try:
             self.driver.get("---")  # Replace with actual URL
             proceed_to_checkout_button = WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable((By.XPATH, "---"))  # Replace with actual XPath
+                EC.element_to_be_clickable((By.XPATH, "---"))
             )
             time.sleep(1.84)
             proceed_to_checkout_button.click()
