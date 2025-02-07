@@ -1,9 +1,14 @@
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from actions import Actions
 import random
 import time
 
-class ItemSelection:
+class ItemSelection(Actions):
     """Handles item selection, adding to cart, and size selection."""
     def __init__(self, driver, logger):
+        super().__init__(driver, logger)
         self.driver = driver
         self.logger = logger
 
