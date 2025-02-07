@@ -1,9 +1,11 @@
+from actions import Actions
 import pyautogui
 import time
 
-class Login:
+class Login(Actions):
     """Handles the login process."""
     def __init__(self, driver, logger):
+        super().__init__(driver, logger)
         self.driver = driver
         self.logger = logger
 
