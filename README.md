@@ -1,4 +1,4 @@
-# SwiftShopBot
+# SwiftShopBot (WITH SENSITIVE DATA REPLACED BY "---")
 
 ## Overview
 
