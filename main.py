@@ -30,3 +30,21 @@ class SwiftShopBot:
                 self.config.logger.error(f"Error with email {email}: {e}")
             finally:
                 self.driver_manager.quit_driver()
+
+if __name__ == "__main__":
+    DRIVER_PATH = "msedgedriver.exe"
+    WEBHOOK_URL = '---'  # MS Teams
+    EMAIL_FILE = 'accounts.txt'
+    PASSWORD = '---'
+
+    config = BotConfig(DRIVER_PATH, WEBHOOK_URL, EMAIL_FILE)
+
+    driver_manager = WebDriverManager(DRIVER_PATH)
+    actions = Actions(driver_manager.driver, config.logger)
+    item_selection = ItemSelection(driver_manager.driver, config.logger)
+    login = Login(driver_manager.driver, config.logger)
+    notification = Notification(WEBHOOK_URL, config.logger)
+
+    bot = SwiftShopBot(config, driver_manager, actions, item_selection, login, notification)
+
+    bot.main(PASSWORD)
