@@ -20,14 +20,9 @@ To run this bot, you need to have the following installed:
 
 - **Python 3.7+**
 - **Selenium** for browser automation  
-  Install it with `pip install selenium`
 - **PyAutoGUI** for mouse automation  
-  Install it with `pip install pyautogui`
 - **Requests** for sending HTTP requests to Microsoft Teams  
-  Install it with `pip install requests`
-- **Microsoft Edge WebDriver** (matching the installed version of Edge)  
-  Download it from [Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
-- **Edge browser** installed for Selenium to control.
+- **Microsoft Edge WebDriver** (matching the installed version of Edge)
 
 ## Safety and Usage Guidelines
 
