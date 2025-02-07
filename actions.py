@@ -19,14 +19,14 @@ class Actions:
 
     def clear_cookies(self):
         """Manually clear cookies from Swift Shop."""
-        self.driver.get("---")  # Replace with actual URL
+        self.driver.get("---")
         time.sleep(2)
         try:
-            self._click_element_by_css_selector("---")  # Replace with actual selector
+            self._click_element_by_css_selector("---")
             time.sleep(1)
-            self._click_element_by_css_selector("#---")  # Replace with actual selector
+            self._click_element_by_css_selector("#---")
             time.sleep(1)
-            self.driver.get("---")  # Replace with actual URL
+            self.driver.get("---")
             self.move_mouse(754, 992, 5.153, 1.788)
         except Exception as e:
             self.logger.error(f"Error clearing cookies: {e}")
