@@ -30,7 +30,7 @@ To run this bot, you need to have the following installed:
   This bot is designed to be used in a controlled, internal testing environment. It should **not** be used on live production websites unless explicitly intended and authorized.
 
 - **Rate Limiting and Anti-Abuse:**  
-  The bot performs multiple actions (logins, purchases, cancellations) in rapid succession. Be sure to set up any necessary rate limiting and avoid using it excessively on live platforms.
+  The bot performs multiple actions (logins, purchases, cancellations) in rapid succession.
 
 - **Legal Compliance:**  
   Always ensure that you have the proper permissions to use automated scripts like this on any web platform.
